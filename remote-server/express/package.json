@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=./dist/app.cjs ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "@modelcontextprotocol/inspector": "^0.8.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "esbuild": "^0.25.2",
     "typescript": "^5.8.3"
   }
 }
