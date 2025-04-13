@@ -1,0 +1,28 @@
+{
+  "include": [
+    "scripts",
+    "./src/manifest.ts",
+    "./src/**/*",
+    "package.json",
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "jsx": "react-jsx",
+    "types": [
+      "node",
+      "@types/chrome"
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+  }
+}

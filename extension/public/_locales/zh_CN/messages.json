@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "WEB MCP - 一键为你的浏览器开启 MCP 服务"
+  },
+  "short_name": {
+    "message": "Web MCP"
+  },
+  "description": {
+    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+  }
+}
