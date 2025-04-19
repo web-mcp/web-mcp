@@ -43,9 +43,9 @@ app.post("/web/message", async (req, res) => {
   }
 })
 
-app.get("/sse", async (req, res) => {
+app.get(["/sse", "/sse/:token"], async (req, res) => {
   try {
-    const token = req.query.token
+    const token = req.query.token || req.params.token
     if (!token || typeof token !== "string") {
       res.status(400).end("Token is required")
       return
