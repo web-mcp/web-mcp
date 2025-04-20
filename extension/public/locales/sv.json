@@ -1,0 +1,18 @@
+{
+  "_language": "Swedish",
+  "copied": "Kopierad",
+  "runMcpServer": "Kör MCP-server",
+  "cancelConnection": "Avbryt anslutning",
+  "stopMcpServer": "Stoppa MCP-server",
+  "localService": "Lokal tjänst",
+  "officialService": "Officiell tjänst",
+  "communityService": "Gemenskapstjänst",
+  "comingSoon": "Kommer snart",
+  "enterProxyUrl": "Ange proxy-URL",
+  "tips": {
+    "step1": "Ange eller välj en proxy-URL.",
+    "step2": "Klicka på \"Kör MCP-server\" för att starta och vänta tills MCP-tjänsten är klar.",
+    "step3": "Kopiera SSE-tjänstens adress för användning i SSE MCP-aktiverade agenter.",
+    "proposal": "Vi rekommenderar att du använder en lokal eller gratis, självhanterad proxytjänst för en stabilare och privatare anslutning."
+  }
+}

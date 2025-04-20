@@ -1,0 +1,18 @@
+{
+  "_language": "German",
+  "copied": "Kopiert",
+  "runMcpServer": "MCP-Server ausführen",
+  "cancelConnection": "Verbindung abbrechen",
+  "stopMcpServer": "MCP-Server anhalten",
+  "localService": "Lokaler Dienst",
+  "officialService": "Offizieller Dienst",
+  "communityService": "Community-Dienst",
+  "comingSoon": "Demnächst",
+  "enterProxyUrl": "Proxy-URL eingeben",
+  "tips": {
+    "step1": "Geben Sie eine Proxy-URL ein oder wählen Sie eine aus.",
+    "step2": "Klicken Sie auf „MCP-Server ausführen“, um zu starten, und warten Sie, bis der MCP-Dienst abgeschlossen ist.",
+    "step3": "Kopieren Sie die Adresse des SSE-Dienstes zur Verwendung in SSE MCP-fähigen Agents.",
+    "proposal": "Für eine stabilere und privatere Verbindung empfehlen wir die Verwendung eines lokalen oder kostenlosen, selbst gehosteten Proxy-Dienstes."
+  }
+}

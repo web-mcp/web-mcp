@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "웹 MCP: 브라우저 MCP 서비스, AI 자동화 운영"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "한 번의 클릭으로 브라우저 MCP 서비스를 시작하여 AI가 작업을 자동화하도록 지원합니다."
   }
 }

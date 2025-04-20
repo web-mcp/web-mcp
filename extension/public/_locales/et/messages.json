@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Veebi MCP: brauseri MCP-teenus, AI automatiseeritud toimingud"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Käivitage brauseri MCP-teenus ühe klõpsuga, andes AI-le võimaluse teie eest ülesandeid automatiseerida."
   }
 }

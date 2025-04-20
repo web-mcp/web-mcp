@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "वेब एमसीपी: ब्राउज़र एमसीपी सेवा, एआई स्वचालित संचालन"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "एक क्लिक से ब्राउज़र एमसीपी सेवा लॉन्च करें, एआई को आपके लिए कार्यों को स्वचालित करने के लिए सशक्त बनाएं।"
   }
 }

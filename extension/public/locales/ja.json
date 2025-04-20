@@ -1,0 +1,18 @@
+{
+  "_language": "Japanese",
+  "copied": "コピー済み",
+  "runMcpServer": "MCP サーバーを実行",
+  "cancelConnection": "接続をキャンセル",
+  "stopMcpServer": "MCP サーバーを停止",
+  "localService": "ローカルサービス",
+  "officialService": "公式サービス",
+  "communityService": "コミュニティサービス",
+  "comingSoon": "近日公開",
+  "enterProxyUrl": "プロキシ URL を入力",
+  "tips": {
+    "step1": "プロキシ URL を入力または選択します。",
+    "step2": "「MCP サーバーを実行」をクリックして開始し、MCP サービスが完了するまで待ちます。",
+    "step3": "SSE MCP 対応エージェントで使用するために SSE サービスアドレスをコピーします。",
+    "proposal": "より安定したプライベートな接続のために、ローカルまたは無料のセルフホスト型プロキシサービスを使用することをお勧めします。"
+  }
+}

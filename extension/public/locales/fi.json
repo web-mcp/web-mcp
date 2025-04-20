@@ -1,0 +1,18 @@
+{
+  "_language": "Finnish",
+  "copied": "Kopioitu",
+  "runMcpServer": "Suorita MCP-palvelin",
+  "cancelConnection": "Peruuta yhteys",
+  "stopMcpServer": "Pysäytä MCP-palvelin",
+  "localService": "Paikallinen palvelu",
+  "officialService": "Virallinen palvelu",
+  "communityService": "Yhteisöpalvelu",
+  "comingSoon": "Tulossa pian",
+  "enterProxyUrl": "Anna välityspalvelimen URL-osoite",
+  "tips": {
+    "step1": "Anna tai valitse välityspalvelimen URL-osoite.",
+    "step2": "Käynnistä napsauttamalla \"Suorita MCP-palvelin\" ja odota, kunnes MCP-palvelu on valmis.",
+    "step3": "Kopioi SSE-palveluosoite käytettäväksi SSE MCP -yhteensopivissa agenteissa.",
+    "proposal": "Suosittelemme paikallisen tai ilmaisen, itse isännöidyn välityspalvelimen käyttöä vakaamman ja yksityisemmän yhteyden saamiseksi."
+  }
+}

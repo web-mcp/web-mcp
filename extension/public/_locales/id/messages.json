@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: Layanan MCP Peramban, Operasi Otomatis AI"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Luncurkan Layanan MCP Peramban dengan Satu Klik, Memberdayakan AI untuk Mengotomatiskan Tugas untuk Anda."
   }
 }

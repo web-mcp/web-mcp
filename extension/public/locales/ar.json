@@ -1,0 +1,18 @@
+{
+  "_language": "Arabic",
+  "copied": "تم النسخ",
+  "runMcpServer": "تشغيل خادم MCP",
+  "cancelConnection": "إلغاء الاتصال",
+  "stopMcpServer": "إيقاف خادم MCP",
+  "localService": "خدمة محلية",
+  "officialService": "خدمة رسمية",
+  "communityService": "خدمة المجتمع",
+  "comingSoon": "قريبًا",
+  "enterProxyUrl": "أدخل عنوان URL للوكيل",
+  "tips": {
+    "step1": "أدخل عنوان URL وكيلاً أو حدده.",
+    "step2": "انقر فوق \"تشغيل خادم MCP\" للبدء وانتظر حتى تكتمل خدمة MCP.",
+    "step3": "انسخ عنوان خدمة SSE لاستخدامه في الوكلاء الذين يدعمون SSE MCP.",
+    "proposal": "نوصي باستخدام خدمة وكيل محلية أو مجانية مستضافة ذاتيًا للحصول على اتصال أكثر استقرارًا وخصوصية."
+  }
+}

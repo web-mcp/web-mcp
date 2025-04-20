@@ -1,0 +1,18 @@
+{
+  "_language": "Persian",
+  "copied": "کپی شد",
+  "runMcpServer": "اجرای سرور MCP",
+  "cancelConnection": "لغو اتصال",
+  "stopMcpServer": "توقف سرور MCP",
+  "localService": "سرویس محلی",
+  "officialService": "سرویس رسمی",
+  "communityService": "سرویس انجمن",
+  "comingSoon": "به زودی",
+  "enterProxyUrl": "URL پراکسی را وارد کنید",
+  "tips": {
+    "step1": "یک URL پراکسی را وارد یا انتخاب کنید.",
+    "step2": "برای شروع روی «اجرای سرور MCP» کلیک کنید و منتظر بمانید تا سرویس MCP کامل شود.",
+    "step3": "آدرس سرویس SSE را برای استفاده در Agent های دارای SSE MCP کپی کنید.",
+    "proposal": "برای اتصال پایدارتر و خصوصی تر، استفاده از یک سرویس پراکسی محلی یا رایگان خود میزبان را توصیه می کنیم."
+  }
+}

@@ -8,7 +8,7 @@ const outdir = resolve(import.meta.dirname, `../dist/${browser}`)
 
 const require = createRequire(import.meta.url)
 const manifest = require(resolve(outdir, "manifest.json"))
-const fileName = `anything-copilot-${browser}-${manifest.version}.zip`
+const fileName = `web-mcp-${browser}-${manifest.version}.zip`
 const output = fs.createWriteStream(`package/${fileName}`)
 const archive = archiver("zip", {
   zlib: { level: 9 },

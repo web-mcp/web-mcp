@@ -1,0 +1,18 @@
+{
+  "_language": "Slovenian",
+  "copied": "Kopirano",
+  "runMcpServer": "Zaženi strežnik MCP",
+  "cancelConnection": "Prekliči povezavo",
+  "stopMcpServer": "Ustavi strežnik MCP",
+  "localService": "Lokalna storitev",
+  "officialService": "Uradna storitev",
+  "communityService": "Storitev skupnosti",
+  "comingSoon": "Kmalu na voljo",
+  "enterProxyUrl": "Vnesite URL proxyja",
+  "tips": {
+    "step1": "Vnesite ali izberite URL proxyja.",
+    "step2": "Kliknite »Zaženi strežnik MCP«, da zaženete, in počakajte, da se storitev MCP zaključi.",
+    "step3": "Kopirajte naslov storitve SSE za uporabo v agentih, ki podpirajo SSE MCP.",
+    "proposal": "Za stabilnejšo in zasebno povezavo priporočamo uporabo lokalne ali brezplačne proxy storitve, ki jo gostite sami."
+  }
+}

@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: Tarayıcı MCP Hizmeti, Yapay Zeka Otomatik İşlemleri"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Tek Tıkla Tarayıcı MCP Hizmetini Başlatın, Yapay Zekanın Sizin İçin Görevleri Otomatikleştirmesini Sağlayın."
   }
 }

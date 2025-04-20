@@ -1,0 +1,18 @@
+{
+  "_language": "Catalan",
+  "copied": "Copiat",
+  "runMcpServer": "Executa el servidor MCP",
+  "cancelConnection": "Cancel·la la connexió",
+  "stopMcpServer": "Atura el servidor MCP",
+  "localService": "Servei local",
+  "officialService": "Servei oficial",
+  "communityService": "Servei comunitari",
+  "comingSoon": "Pròximament",
+  "enterProxyUrl": "Introduïu l'URL del servidor intermediari",
+  "tips": {
+    "step1": "Introduïu o seleccioneu un URL de servidor intermediari.",
+    "step2": "Feu clic a \"Executa el servidor MCP\" per iniciar-lo i espereu que finalitzi el servei MCP.",
+    "step3": "Copieu l'adreça del servei SSE per utilitzar-la en agents compatibles amb SSE MCP.",
+    "proposal": "Recomanem utilitzar un servei de servidor intermediari local o gratuït autoallotjat per obtenir una connexió més estable i privada."
+  }
+}

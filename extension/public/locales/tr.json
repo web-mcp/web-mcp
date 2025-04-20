@@ -1,0 +1,18 @@
+{
+  "_language": "Turkish",
+  "copied": "Kopyalandı",
+  "runMcpServer": "MCP Sunucusunu Çalıştır",
+  "cancelConnection": "Bağlantıyı İptal Et",
+  "stopMcpServer": "MCP Sunucusunu Durdur",
+  "localService": "Yerel Servis",
+  "officialService": "Resmi Servis",
+  "communityService": "Topluluk Servisi",
+  "comingSoon": "Yakında",
+  "enterProxyUrl": "Proxy URL'sini Girin",
+  "tips": {
+    "step1": "Bir Proxy URL'si girin veya seçin.",
+    "step2": "Başlatmak için \"MCP Sunucusunu Çalıştır\"a tıklayın ve MCP hizmetinin tamamlanmasını bekleyin.",
+    "step3": "SSE MCP özellikli Aracılarda kullanmak üzere SSE hizmet adresini kopyalayın.",
+    "proposal": "Daha kararlı ve özel bir bağlantı için yerel veya ücretsiz, kendi kendine barındırılan bir proxy hizmeti kullanmanızı öneririz."
+  }
+}

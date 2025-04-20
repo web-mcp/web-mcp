@@ -1,17 +1,17 @@
-import { fileURLToPath, URL, resolve as r } from "node:url";
-import { dirname, resolve, relative } from "node:path";
-import { readFileSync } from "node:fs";
-import { defineConfig, mergeConfig, type UserConfig } from "vite";
-import manifest, { browser } from "./src/manifest";
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
+import { fileURLToPath, URL, resolve as r } from "node:url"
+import { dirname, resolve, relative } from "node:path"
+import { readFileSync } from "node:fs"
+import { defineConfig, mergeConfig, type UserConfig } from "vite"
+import manifest, { browser } from "./src/manifest"
+import tailwindcss from "@tailwindcss/vite"
+import react from "@vitejs/plugin-react-swc"
 
 /// <reference types="vitest" />
 
-export const __DEV__ = process.env.NODE_ENV == "development";
-const __FIREFOX__ = process.env.BROWSER == "firefox";
+export const __DEV__ = process.env.NODE_ENV == "development"
+const __FIREFOX__ = process.env.BROWSER == "firefox"
 
-export const outdir = `dist/${browser}`;
+export const outdir = `dist/${browser}`
 
 export const shareConfig: UserConfig = {
   define: {
@@ -25,17 +25,7 @@ export const shareConfig: UserConfig = {
   plugins: [
     react(),
     tailwindcss(),
-    {
-      name: "assets-rewrite",
-      enforce: "post",
-      apply: "build",
-      transformIndexHtml(html, { path }) {
-        return html.replace(
-          /"\/assets\//g,
-          `"${relative(dirname(path), "/assets")}/`
-        );
-      },
-    },
+    //
   ],
   resolve: {
     alias: {
@@ -50,9 +40,9 @@ export const shareConfig: UserConfig = {
   build: {
     minify: __FIREFOX__ ? false : "esbuild",
   },
-};
+}
 
-const port = 5172;
+const port = 5172
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) =>
@@ -78,6 +68,7 @@ export default defineConfig(({ command }) =>
           // sidebar: "sidebar.html",
           offscreen: "offscreen.html",
           options: "options.html",
+          dev: "dev.html",
           index: "./src/assets/main.css",
         },
         output: {
@@ -88,4 +79,4 @@ export default defineConfig(({ command }) =>
       },
     },
   })
-);
+)

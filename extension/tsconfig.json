@@ -3,6 +3,7 @@
     "scripts",
     "./src/manifest.ts",
     "./src/**/*",
+    "public",
     "package.json",
     "vite.config.*",
     "vitest.config.*",
@@ -17,12 +18,11 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "jsx": "react-jsx",
-    "types": [
-      "node",
-      "@types/chrome"
-    ],
+    "resolveJsonModule": true,
+    "types": ["node", "@types/chrome"],
     "paths": {
+      "@/public/*": ["./public/*"],
       "@/*": ["./src/*"]
-    },
+    }
   }
 }

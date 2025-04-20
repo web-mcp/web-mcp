@@ -79,7 +79,7 @@ export default /* @__PURE__ */ (() => ({
     //   run_at: "document_start",
     // },
   ],
-  options_page: "options.html",
+  // options_page: "options.html",
   // side_panel: {
   //   default_path: defaultSidebarPath,
   // },
@@ -88,21 +88,19 @@ export default /* @__PURE__ */ (() => ({
     "scripting",
     "activeTab",
     "storage",
-    "offscreen",
-    "sidePanel",
+    // "offscreen",
+    // "sidePanel",
     "contextMenus",
     "search",
     "notifications",
     "tabCapture",
     "downloads",
-    // "declarativeNetRequestWithHostAccess",
-    // "cookies",
-    __OPERA__ ? "opera://favicon" : "favicon",
-    ...(__DEV__ ? (["declarativeNetRequestFeedback"] as const) : []),
+    // "debugger",
+    ...(__DEV__ ? ([] as const) : []),
   ],
-  optional_permissions: ["bookmarks", "readingList", "management"],
+  optional_permissions: [],
   host_permissions: ["<all_urls>"],
-  minimum_chrome_version: "111",
+  // minimum_chrome_version: "111",
   web_accessible_resources: [
     {
       resources: ["logo.svg"],
@@ -113,7 +111,7 @@ export default /* @__PURE__ */ (() => ({
   ],
   content_security_policy: {
     extension_pages: __DEV__
-      ? `script-src 'self' http://localhost:5172 'wasm-unsafe-eval';`
+      ? `script-src 'self' http://localhost:5172;`
       : `script-src 'self' 'wasm-unsafe-eval'`,
   },
 }))()

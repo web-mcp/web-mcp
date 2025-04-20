@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: خدمة MCP للمتصفح، عمليات مؤتمتة بواسطة الذكاء الاصطناعي"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "قم بتشغيل خدمة MCP للمتصفح بنقرة واحدة، مما يمكّن الذكاء الاصطناعي من أتمتة المهام نيابةً عنك."
   }
 }

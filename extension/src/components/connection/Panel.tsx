@@ -5,25 +5,52 @@ import { Button } from "@/components/ui/button"
 import { msgInvoker } from "@/utils/invoker"
 import { Connection, InvokerFunc, SessionState } from "@/types"
 import { Copy, LoaderCircle, Play, Power } from "lucide-react"
+import { getLocal, setLocal } from "@/utils/ext"
+import { useTranslation } from "react-i18next"
+import ProxyInput from "./ProxyInput"
 
 type Props = {
   state: SessionState
 }
 
 export default function Connect({ state }: Props) {
-  const [proxyUrl, setProxyUrl] = useState("")
-  const [token, setToken] = useState(crypto.randomUUID())
+  const [proxyUrl, setProxyUrl] = useState("https://web-mcp.koyeb.app/web/sse")
+  const [tokenData, setTokenData] = useState({
+    url: "",
+    token: "",
+  })
+  const [copied, setCopied] = useState(false)
+  const { t } = useTranslation()
 
-  const handleSelectChange = (value: string) => {
-    if (state.connection != Connection.Connecting) {
-      setProxyUrl(value)
-    }
-  }
+  useEffect(() => {
+    getLocal({
+      proxyUrl: "",
+      token: "",
+      tokenUrl: "",
+    }).then(({ proxyUrl, token, tokenUrl }) => {
+      proxyUrl && setProxyUrl(proxyUrl)
+      setTokenData({
+        url: tokenUrl,
+        token: token,
+      })
+    })
+  }, [])
 
   const handleConnect = async () => {
+    let token = tokenData.url == proxyUrl ? tokenData.token : ""
+    if (!token) {
+      token = crypto.randomUUID()
+    }
+
     const state = await msgInvoker.invoke({
       func: InvokerFunc.Connect,
       args: [proxyUrl, token],
+    })
+
+    setLocal({
+      proxyUrl: proxyUrl,
+      token: token,
+      tokenUrl: proxyUrl,
     })
   }
 
@@ -35,53 +62,9 @@ export default function Connect({ state }: Props) {
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(state.serverUrl)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1000)
   }
-
-  const selectAfter = (
-    <AntSelect
-      value=""
-      onChange={handleSelectChange}
-      popupMatchSelectWidth={false}
-      dropdownStyle={{ maxHeight: "80vh" }}
-      options={[
-        {
-          label: "Local",
-          options: [
-            {
-              label: "http://localhost:6288/web/sse",
-              value: "http://localhost:6288/web/sse",
-            },
-          ],
-        },
-        {
-          label: "Offical",
-          options: [
-            {
-              label: "Offical Cloudflare worker",
-              value: "https://xxx.worker.dev",
-            },
-            {
-              label: "Offical Onrender Server",
-              value: "https://xxx.xxx.com",
-            },
-          ],
-        },
-        {
-          label: "Community",
-          options: [
-            {
-              label: "Offical Cloudflare worker",
-              value: "https://xxx.worker.dev/",
-            },
-            {
-              label: "Offical Onrender Server",
-              value: "https://xxx.xxx.com/",
-            },
-          ],
-        },
-      ]}
-    />
-  )
 
   return (
     <div className="my-4">
@@ -93,7 +76,7 @@ export default function Connect({ state }: Props) {
                 {state.serverUrl}
               </div>
             </div>
-            <Tooltip title="Copied!" trigger="click">
+            <Tooltip title={t("copied") + "!"} open={copied}>
               <Button onClick={handleCopy}>
                 <Copy />
               </Button>
@@ -102,18 +85,16 @@ export default function Connect({ state }: Props) {
 
           <Button className="w-full cursor-pointer" onClick={handleDisconnect}>
             <Power />
-            Stop MCP Server
+            {t("stopMcpServer")}
           </Button>
         </div>
       ) : (
         <div className="space-y-4">
-          <AntInput
-            size="large"
+          <ProxyInput
             value={proxyUrl}
             disabled={state.connection == Connection.Connecting}
-            placeholder="Enter Proxy URL"
-            onChange={(e) => setProxyUrl(e.target.value)}
-            addonAfter={selectAfter}
+            placeholder={t("enterProxyUrl")}
+            onChange={(v) => setProxyUrl(v)}
           />
           {state.connection == Connection.Connecting ? (
             <Button
@@ -121,7 +102,7 @@ export default function Connect({ state }: Props) {
               onClick={handleDisconnect}
             >
               <LoaderCircle className="animate-spin" />
-              Cancel Connect
+              {t("cancelConnection")}
             </Button>
           ) : (
             <Button
@@ -130,7 +111,7 @@ export default function Connect({ state }: Props) {
               onClick={handleConnect}
             >
               <Play />
-              Start MCP Server
+              {t("runMcpServer")}
             </Button>
           )}
         </div>

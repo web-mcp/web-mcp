@@ -1,0 +1,18 @@
+{
+  "_language": "Chinese (Traditional)",
+  "copied": "已複製",
+  "runMcpServer": "啟動 MCP 伺服器",
+  "cancelConnection": "取消連線",
+  "stopMcpServer": "停止 MCP 伺服器",
+  "localService": "本地服務",
+  "officialService": "官方服務",
+  "communityService": "社群服務",
+  "comingSoon": "即將推出",
+  "enterProxyUrl": "輸入代理伺服器 URL",
+  "tips": {
+    "step1": "輸入或選取代理伺服器 URL。",
+    "step2": "按一下「啟動 MCP 伺服器」以啟動，並等候 MCP 服務完成。",
+    "step3": "複製 SSE 服務位址，用於支援 SSE MCP 的代理程式。",
+    "proposal": "建議您使用本機或免費的自託管代理服務，以取得更穩定且私密的連線。"
+  }
+}

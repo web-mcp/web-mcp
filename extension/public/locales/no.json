@@ -1,0 +1,18 @@
+{
+  "_language": "Norwegian",
+  "copied": "Kopiert",
+  "runMcpServer": "Kjør MCP-server",
+  "cancelConnection": "Avbryt tilkobling",
+  "stopMcpServer": "Stopp MCP-server",
+  "localService": "Lokal tjeneste",
+  "officialService": "Offisiell tjeneste",
+  "communityService": "Fellesskapstjeneste",
+  "comingSoon": "Kommer snart",
+  "enterProxyUrl": "Skriv inn proxy-URL",
+  "tips": {
+    "step1": "Skriv inn eller velg en proxy-URL.",
+    "step2": "Klikk på \"Kjør MCP-server\" for å starte og vent til MCP-tjenesten er fullført.",
+    "step3": "Kopier SSE-tjenesteadressen for bruk i SSE MCP-aktiverte agenter.",
+    "proposal": "Vi anbefaler å bruke en lokal eller gratis, selv-hostet proxy-tjeneste for en mer stabil og privat tilkobling."
+  }
+}

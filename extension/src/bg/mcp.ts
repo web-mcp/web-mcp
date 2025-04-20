@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js"
 import { Subject } from "rxjs"
-import { registerBrowserTools } from "./tools"
+import { registerBrowserTools, registerPageTools } from "./tools"
 import { JSONRPCMessage } from "@modelcontextprotocol/sdk/types.js"
 
 export class ObservableMcpServer extends McpServer {
@@ -58,6 +58,7 @@ export async function createMCPServer() {
   })
 
   registerBrowserTools(server)
+  registerPageTools(server)
 
   return server
 }

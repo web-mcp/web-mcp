@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "വെബ് എംസിപി: ബ്രൗസർ എംസിപി സേവനം, എഐ ഓട്ടോമേറ്റഡ് ഓപ്പറേഷൻസ്"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "ഒരു ക്ലിക്കിലൂടെ ബ്രൗസർ എംസിപി സേവനം സമാരംഭിക്കുക, നിങ്ങൾക്കായി ടാസ്‌ക്കുകൾ ഓട്ടോമേറ്റ് ചെയ്യാൻ എഐയെ ശാക്തീകരിക്കുക."
   }
 }

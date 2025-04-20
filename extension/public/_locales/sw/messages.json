@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: Huduma ya Kivinjari cha MCP, Uendeshaji wa Kiotomatiki wa AI"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Anzisha Huduma ya Kivinjari cha MCP kwa Bonyeza Moja, Ikiwezesha AI Kufanya Kazi Kiotomatiki kwa Ajili Yako."
   }
 }

@@ -1,0 +1,18 @@
+{
+  "_language": "Filipino",
+  "copied": "Kinopya",
+  "runMcpServer": "Patakbuhin ang MCP Server",
+  "cancelConnection": "Kanselahin ang Koneksyon",
+  "stopMcpServer": "Itigil ang MCP Server",
+  "localService": "Lokal na Serbisyo",
+  "officialService": "Opisyal na Serbisyo",
+  "communityService": "Serbisyo ng Komunidad",
+  "comingSoon": "Malapit na",
+  "enterProxyUrl": "Ilagay ang Proxy URL",
+  "tips": {
+    "step1": "Maglagay o pumili ng proxy URL.",
+    "step2": "I-click ang \"Patakbuhin ang MCP Server\" para magsimula at hintaying makumpleto ang serbisyo ng MCP.",
+    "step3": "Kopyahin ang address ng serbisyo ng SSE para magamit sa mga Agent na pinagana ng SSE MCP.",
+    "proposal": "Inirerekomenda namin ang paggamit ng lokal o libre, self-hosted na proxy service para sa mas matatag at pribadong koneksyon."
+  }
+}

@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: naršyklės MCP paslauga, DI automatizuotos operacijos"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Paleiskite naršyklės MCP paslaugą vienu spustelėjimu, įgalindami DI automatizuoti užduotis už jus."
   }
 }

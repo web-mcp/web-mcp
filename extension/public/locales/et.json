@@ -1,0 +1,18 @@
+{
+  "_language": "Estonian",
+  "copied": "Kopeeritud",
+  "runMcpServer": "Käivita MCP server",
+  "cancelConnection": "Tühista ühendus",
+  "stopMcpServer": "Peata MCP server",
+  "localService": "Kohalik teenus",
+  "officialService": "Ametlik teenus",
+  "communityService": "Kogukonnateenus",
+  "comingSoon": "Peagi saadaval",
+  "enterProxyUrl": "Sisesta puhverserveri URL",
+  "tips": {
+    "step1": "Sisestage või valige puhverserveri URL.",
+    "step2": "Käivitamiseks klõpsake nuppu „Käivita MCP server” ja oodake, kuni MCP teenus lõpetab.",
+    "step3": "Kopeerige SSE teenuse aadress kasutamiseks SSE MCP toega agentides.",
+    "proposal": "Stabiilsema ja privaatsema ühenduse tagamiseks soovitame kasutada kohalikku või tasuta isemajutatud puhverserveri teenust."
+  }
+}

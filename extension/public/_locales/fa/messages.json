@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "وب MCP: سرویس MCP مرورگر، عملیات خودکار مبتنی بر هوش مصنوعی"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "سرویس MCP مرورگر را با یک کلیک راه اندازی کنید و به هوش مصنوعی قدرت دهید تا وظایف را برای شما خودکار کند."
   }
 }

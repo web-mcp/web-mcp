@@ -1,0 +1,18 @@
+{
+  "_language": "Malay",
+  "copied": "Disalin",
+  "runMcpServer": "Jalankan Pelayan MCP",
+  "cancelConnection": "Batalkan Sambungan",
+  "stopMcpServer": "Hentikan Pelayan MCP",
+  "localService": "Perkhidmatan Tempatan",
+  "officialService": "Perkhidmatan Rasmi",
+  "communityService": "Perkhidmatan Komuniti",
+  "comingSoon": "Akan Datang",
+  "enterProxyUrl": "Masukkan URL Proksi",
+  "tips": {
+    "step1": "Masukkan atau pilih URL proksi.",
+    "step2": "Klik \"Jalankan Pelayan MCP\" untuk memulakan dan tunggu sehingga perkhidmatan MCP selesai.",
+    "step3": "Salin alamat perkhidmatan SSE untuk digunakan dalam Ejen yang didayakan SSE MCP.",
+    "proposal": "Kami mengesyorkan menggunakan perkhidmatan proksi tempatan atau percuma yang dihoskan sendiri untuk sambungan yang lebih stabil dan peribadi."
+  }
+}

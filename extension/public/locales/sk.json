@@ -1,0 +1,18 @@
+{
+  "_language": "Slovak",
+  "copied": "Skopírované",
+  "runMcpServer": "Spustiť MCP server",
+  "cancelConnection": "Zrušiť pripojenie",
+  "stopMcpServer": "Zastaviť MCP server",
+  "localService": "Lokálna služba",
+  "officialService": "Oficiálna služba",
+  "communityService": "Komunitná služba",
+  "comingSoon": "Už čoskoro",
+  "enterProxyUrl": "Zadajte adresu URL servera proxy",
+  "tips": {
+    "step1": "Zadajte alebo vyberte adresu URL servera proxy.",
+    "step2": "Kliknutím na tlačidlo „Spustiť MCP server“ spustíte a počkáte na dokončenie služby MCP.",
+    "step3": "Skopírujte adresu služby SSE na použitie v agentoch s podporou SSE MCP.",
+    "proposal": "Pre stabilnejšie a súkromnejšie pripojenie odporúčame použiť lokálnu alebo bezplatnú službu proxy servera hosťovanú samostatne."
+  }
+}

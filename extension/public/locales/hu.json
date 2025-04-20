@@ -1,0 +1,18 @@
+{
+  "_language": "Hungarian",
+  "copied": "Másolva",
+  "runMcpServer": "MCP-szerver futtatása",
+  "cancelConnection": "Kapcsolat megszakítása",
+  "stopMcpServer": "MCP-szerver leállítása",
+  "localService": "Helyi szolgáltatás",
+  "officialService": "Hivatalos szolgáltatás",
+  "communityService": "Közösségi szolgáltatás",
+  "comingSoon": "Hamarosan",
+  "enterProxyUrl": "Proxy URL megadása",
+  "tips": {
+    "step1": "Adjon meg vagy válasszon ki egy proxy URL-t.",
+    "step2": "Kattintson az „MCP-szerver futtatása” gombra az indításhoz, és várja meg, amíg az MCP szolgáltatás befejeződik.",
+    "step3": "Másolja ki az SSE szolgáltatási címet az SSE MCP-kompatibilis ügynökökben való használathoz.",
+    "proposal": "Stabilabb és privátabb kapcsolat érdekében javasoljuk egy helyi vagy ingyenes, saját üzemeltetésű proxy szolgáltatás használatát."
+  }
+}

@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: Nettleser MCP-tjeneste, AI-automatiserte operasjoner"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Start nettleserens MCP-tjeneste med ett klikk, og la AI automatisere oppgaver for deg."
   }
 }

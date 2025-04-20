@@ -1,0 +1,18 @@
+{
+  "_language": "Amharic",
+  "copied": "ተቀድቷል",
+  "runMcpServer": "MCP አገልጋይ አሂድ",
+  "cancelConnection": "ግንኙነት ሰርዝ",
+  "stopMcpServer": "MCP አገልጋይ አቁም",
+  "localService": "አካባቢያዊ አገልግሎት",
+  "officialService": "ኦፊሴላዊ አገልግሎት",
+  "communityService": "የማህበረሰብ አገልግሎት",
+  "comingSoon": "በቅርብ ቀን",
+  "enterProxyUrl": "የፕሮክሲ ዩአርኤል ያስገቡ",
+  "tips": {
+    "step1": "የፕሮክሲ ዩአርኤል ያስገቡ ወይም ይምረጡ።",
+    "step2": "ለመጀመር \"MCP አገልጋይ አሂድ\" የሚለውን ጠቅ ያድርጉ እና የMCP አገልግሎት እስኪጠናቀቅ ይጠብቁ።",
+    "step3": "ለSSE MCP-የነቁ ወኪሎች ለመጠቀም የSSE አገልግሎት አድራሻ ይቅዱ።",
+    "proposal": "የበለጠ የተረጋጋ እና የግል ግንኙነት ለማግኘት አካባቢያዊ ወይም ነጻ፣ በራስ የሚስተናገድ የፕሮክሲ አገልግሎት እንዲጠቀሙ እንመክራለን።"
+  }
+}

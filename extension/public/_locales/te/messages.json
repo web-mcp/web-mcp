@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "వెబ్ MCP: బ్రౌజర్ MCP సర్వీస్, AI ఆటోమేటెడ్ ఆపరేషన్స్"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "ఒకే క్లిక్‌తో బ్రౌజర్ MCP సేవను ప్రారంభించండి, మీ కోసం పనులను ఆటోమేట్ చేయడానికి AIకి అధికారం ఇవ్వండి."
   }
 }

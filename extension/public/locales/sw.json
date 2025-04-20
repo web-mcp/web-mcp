@@ -1,0 +1,18 @@
+{
+  "_language": "Swahili",
+  "copied": "Imenakiliwa",
+  "runMcpServer": "Washa Seva ya MCP",
+  "cancelConnection": "Ghairi Muunganisho",
+  "stopMcpServer": "Simamisha Seva ya MCP",
+  "localService": "Huduma ya Karibu",
+  "officialService": "Huduma Rasmi",
+  "communityService": "Huduma ya Jamii",
+  "comingSoon": "Inakuja Hivi Karibuni",
+  "enterProxyUrl": "Weka URL ya Proksi",
+  "tips": {
+    "step1": "Weka au Chagua URL ya Proksi.",
+    "step2": "Bofya \"Washa Seva ya MCP\" ili kuanza na subiri huduma ya MCP ikamilike.",
+    "step3": "Nakili anwani ya huduma ya SSE kwa matumizi katika Maajenti wanaowezeshwa na SSE MCP.",
+    "proposal": "Tunapendekeza kutumia huduma ya proksi ya ndani au ya bure, inayojiendesha kwa muunganisho thabiti na wa faragha zaidi."
+  }
+}

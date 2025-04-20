@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "ድር MCP: የአሳሽ MCP አገልግሎት፣ በ AI በራስ ሰር የሚሰሩ ስራዎች"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "በአንድ ጠቅታ የአሳሽ MCP አገልግሎትን ያስጀምሩ፣ AI ስራዎችን በራስ ሰር እንዲሰራዎት ያስችለዋል።"
   }
 }

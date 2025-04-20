@@ -61,9 +61,10 @@ export class Session {
     const { url, token } = this
 
     const connection = this._connection$.value
-    const serverUrl = url
-      ? `${url.origin}/sse?token=${encodeURIComponent(token)}`
-      : ""
+    // const serverUrl = url
+    //   ? `${url.origin}/sse?token=${encodeURIComponent(token)}`
+    //   : ""
+    const serverUrl = url ? `${url.origin}/sse/${token}` : ""
 
     return {
       connection,

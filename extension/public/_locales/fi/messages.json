@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP: Selaimen MCP-palvelu, tekoälyn automatisoimat toiminnot"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Käynnistä selaimen MCP-palvelu yhdellä napsautuksella ja anna tekoälyn automatisoida tehtäviä puolestasi."
   }
 }

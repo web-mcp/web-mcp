@@ -1,0 +1,18 @@
+{
+  "_language": "Vietnamese",
+  "copied": "Đã sao chép",
+  "runMcpServer": "Chạy Máy chủ MCP",
+  "cancelConnection": "Hủy kết nối",
+  "stopMcpServer": "Dừng Máy chủ MCP",
+  "localService": "Dịch vụ cục bộ",
+  "officialService": "Dịch vụ chính thức",
+  "communityService": "Dịch vụ cộng đồng",
+  "comingSoon": "Sắp ra mắt",
+  "enterProxyUrl": "Nhập URL proxy",
+  "tips": {
+    "step1": "Nhập hoặc chọn một URL proxy.",
+    "step2": "Nhấp vào \"Chạy Máy chủ MCP\" để bắt đầu và đợi dịch vụ MCP hoàn tất.",
+    "step3": "Sao chép địa chỉ dịch vụ SSE để sử dụng trong các Tác nhân hỗ trợ SSE MCP.",
+    "proposal": "Chúng tôi khuyên bạn nên sử dụng dịch vụ proxy tự lưu trữ, cục bộ hoặc miễn phí để có kết nối ổn định và riêng tư hơn."
+  }
+}

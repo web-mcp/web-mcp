@@ -1,0 +1,18 @@
+{
+  "_language": "Latvian",
+  "copied": "Nokopēts",
+  "runMcpServer": "Palaist MCP serveri",
+  "cancelConnection": "Atcelt savienojumu",
+  "stopMcpServer": "Apturēt MCP serveri",
+  "localService": "Lokālais pakalpojums",
+  "officialService": "Oficiālais pakalpojums",
+  "communityService": "Kopienas pakalpojums",
+  "comingSoon": "Drīzumā",
+  "enterProxyUrl": "Ievadiet starpniekservera URL",
+  "tips": {
+    "step1": "Ievadiet vai atlasiet starpniekservera URL.",
+    "step2": "Noklikšķiniet uz Palaist MCP serveri, lai sāktu, un pagaidiet, līdz MCP pakalpojums tiks pabeigts.",
+    "step3": "Nokopējiet SSE pakalpojuma adresi lietošanai SSE MCP iespējotos aģentos.",
+    "proposal": "Stabilākam un privātākam savienojumam iesakām izmantot lokālu vai bezmaksas, pašmitinātu starpniekservera pakalpojumu."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_language": "Hebrew",
+  "copied": "הועתק",
+  "runMcpServer": "הפעל שרת MCP",
+  "cancelConnection": "בטל חיבור",
+  "stopMcpServer": "עצור שרת MCP",
+  "localService": "שירות מקומי",
+  "officialService": "שירות רשמי",
+  "communityService": "שירות קהילתי",
+  "comingSoon": "בקרוב",
+  "enterProxyUrl": "הזן כתובת URL של שרת proxy",
+  "tips": {
+    "step1": "הזן או בחר כתובת URL של שרת proxy.",
+    "step2": "לחץ על 'הפעל שרת MCP' כדי להתחיל והמתן עד לסיום שירות MCP.",
+    "step3": "העתק את כתובת שירות SSE לשימוש בסוכנים התומכים ב-SSE MCP.",
+    "proposal": "אנו ממליצים להשתמש בשירות proxy מקומי או חינמי באירוח עצמי לחיבור יציב ופרטי יותר."
+  }
+}

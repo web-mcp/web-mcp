@@ -1,0 +1,18 @@
+{
+  "_language": "Dutch",
+  "copied": "Gekopieerd",
+  "runMcpServer": "MCP Server uitvoeren",
+  "cancelConnection": "Verbinding annuleren",
+  "stopMcpServer": "MCP Server stoppen",
+  "localService": "Lokale service",
+  "officialService": "Officiële service",
+  "communityService": "Communityservice",
+  "comingSoon": "Binnenkort beschikbaar",
+  "enterProxyUrl": "Proxy-URL invoeren",
+  "tips": {
+    "step1": "Voer een proxy-URL in of selecteer er een.",
+    "step2": "Klik op \"MCP Server uitvoeren\" om te starten en wacht tot de MCP-service is voltooid.",
+    "step3": "Kopieer het SSE-serviceadres voor gebruik in SSE MCP-compatibele agents.",
+    "proposal": "We raden aan een lokale of gratis, zelf gehoste proxyservice te gebruiken voor een stabielere en private verbinding."
+  }
+}

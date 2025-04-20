@@ -1,11 +1,11 @@
 {
   "name": {
-    "message": "WEB MCP - One-Click Browser Empowerment"
+    "message": "Web MCP : Service Navigateur MCP, Opérations automatisées par IA"
   },
   "short_name": {
     "message": "Web MCP"
   },
   "description": {
-    "message": "Enable MCP (Model Context Protocol) service for your browser instantly"
+    "message": "Lancez le service Navigateur MCP en un clic, permettant à l'IA d'automatiser les tâches pour vous."
   }
 }

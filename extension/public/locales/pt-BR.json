@@ -1,0 +1,18 @@
+{
+  "_language": "Portuguese (Brazil)",
+  "copied": "Copiado",
+  "runMcpServer": "Executar servidor MCP",
+  "cancelConnection": "Cancelar conexão",
+  "stopMcpServer": "Parar servidor MCP",
+  "localService": "Serviço local",
+  "officialService": "Serviço oficial",
+  "communityService": "Serviço comunitário",
+  "comingSoon": "Em breve",
+  "enterProxyUrl": "Digite o URL do proxy",
+  "tips": {
+    "step1": "Digite ou selecione um URL de proxy.",
+    "step2": "Clique em \"Executar servidor MCP\" para iniciar e aguarde a conclusão do serviço MCP.",
+    "step3": "Copie o endereço do serviço SSE para uso em Agentes habilitados para SSE MCP.",
+    "proposal": "Recomendamos usar um serviço de proxy local ou gratuito auto-hospedado para uma conexão mais estável e privada."
+  }
+}

@@ -6,6 +6,7 @@ coverage
 *.local
 *.local.*
 docs/report
+package/*
 
 .env
 !.env.example

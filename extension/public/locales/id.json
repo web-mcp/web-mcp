@@ -1,0 +1,18 @@
+{
+  "_language": "Indonesian",
+  "copied": "Disalin",
+  "runMcpServer": "Jalankan Server MCP",
+  "cancelConnection": "Batalkan Koneksi",
+  "stopMcpServer": "Hentikan Server MCP",
+  "localService": "Layanan Lokal",
+  "officialService": "Layanan Resmi",
+  "communityService": "Layanan Komunitas",
+  "comingSoon": "Segera Hadir",
+  "enterProxyUrl": "Masukkan URL Proksi",
+  "tips": {
+    "step1": "Masukkan atau pilih URL proksi.",
+    "step2": "Klik \"Jalankan Server MCP\" untuk memulai dan tunggu hingga layanan MCP selesai.",
+    "step3": "Salin alamat layanan SSE untuk digunakan di Agen yang mendukung SSE MCP.",
+    "proposal": "Kami merekomendasikan penggunaan layanan proksi lokal atau gratis yang di-host sendiri untuk koneksi yang lebih stabil dan pribadi."
+  }
+}
