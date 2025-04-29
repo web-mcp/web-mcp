@@ -6,7 +6,7 @@ import { Proxy } from "./proxy"
 const app = express()
 app.use(cors())
 
-const p = new Proxy()
+const proxy = new Proxy()
 
 app.get("/web/sse", async (req, res) => {
   try {
@@ -19,7 +19,7 @@ app.get("/web/sse", async (req, res) => {
     }
 
     const transport = new SSEServerTransport("/web/message", res)
-    p.webConnect(token, transport, !!renewal)
+    proxy.webConnect(token, transport, !!renewal)
 
     console.log("/web/sse", transport.sessionId)
   } catch (error) {
@@ -31,7 +31,7 @@ app.get("/web/sse", async (req, res) => {
 app.post("/web/message", async (req, res) => {
   try {
     const sessionId = req.query.sessionId as string
-    const transport = p.getWebTransport(sessionId)
+    const transport = proxy.getWebTransport(sessionId)
     if (!transport) {
       res.status(404).end("Session not found")
       return
@@ -51,13 +51,13 @@ app.get(["/sse", "/sse/:token"], async (req, res) => {
       return
     }
 
-    if (!p.validateToken(token)) {
+    if (!proxy.validateToken(token)) {
       res.status(400).end("Token is invalid")
       return
     }
 
     const transport = new SSEServerTransport("/message", res)
-    p.connect(token, transport)
+    proxy.connect(token, transport)
 
     // console.log("/sse", transport.sessionId)
   } catch (error) {
@@ -70,7 +70,7 @@ app.post("/message", async (req, res) => {
   try {
     const sessionId = req.query.sessionId as string
     console.log(`Received message for sessionId ${sessionId}`)
-    const transport = p.getTransport(sessionId)
+    const transport = proxy.getTransport(sessionId)
     if (!transport) {
       res.status(404).end("Session not found")
       return

@@ -12,8 +12,14 @@ export class Proxy {
   private webTransports: Map<string, SSEServerTransport> = new Map()
   private transports: Map<string, SSEServerTransport> = new Map()
   private sessions: Map<string, Session> = new Map()
+  private timer: NodeJS.Timeout
 
-  constructor() {}
+  constructor() {
+    this.timer = setInterval(() => {
+      this.ping()
+      // TODO: check timeout
+    }, 1000 * 10)
+  }
 
   async webConnect(
     token: string,
@@ -39,7 +45,18 @@ export class Proxy {
     session.webSessionId = transport.sessionId
     this.sessions.set(token, session)
 
+    const stale = this.webTransports.get(session.webSessionId)
+    if (stale) {
+      this.webTransports.delete(stale.sessionId)
+      stale.onmessage = undefined
+      stale.onerror = undefined
+      // close ?
+    }
+
     this.webTransports.set(transport.sessionId, transport)
+    transport.onclose = () => {
+      this.webTransports.delete(transport.sessionId)
+    }
 
     const toClient = this.getTransport(session.sessionId)
     if (toClient) {
@@ -47,14 +64,6 @@ export class Proxy {
     }
 
     await transport.start()
-
-    // setInterval(() => {
-    //   transport.send({
-    //     method: "ping",
-    //     jsonrpc: "2.0",
-    //     id: 1,
-    //   })
-    // }, 3000)
   }
 
   async connect(token: string, transport: SSEServerTransport) {
@@ -63,10 +72,20 @@ export class Proxy {
       throw new Error("Session not found")
     }
 
+    const stale = this.transports.get(session.sessionId)
+    if (stale) {
+      this.transports.delete(stale.sessionId)
+      stale.onmessage = undefined
+      stale.onerror = undefined
+      // close ?
+    }
     session.sessionId = transport.sessionId
     this.sessions.set(token, session)
 
     this.transports.set(transport.sessionId, transport)
+    transport.onclose = () => {
+      this.transports.delete(transport.sessionId)
+    }
     const toWeb = this.getWebTransport(session.webSessionId)
     if (toWeb) {
       this.proxy(transport, toWeb)
@@ -75,14 +94,6 @@ export class Proxy {
     }
 
     await transport.start()
-
-    // setInterval(() => {
-    //   transport.send({
-    //     method: "ping",
-    //     jsonrpc: "2.0",
-    //     id: 1,
-    //   })
-    // }, 3000)
   }
 
   getWebTransport(sessionId: string) {
@@ -114,5 +125,23 @@ export class Proxy {
         console.error("Error sending message to client:", err)
       })
     }
+  }
+
+  private ping() {
+    this.webTransports.forEach((transport) => {
+      transport.send({
+        jsonrpc: "2.0",
+        id: 1,
+        method: "ping",
+      })
+    })
+
+    this.transports.forEach((transport) => {
+      transport.send({
+        jsonrpc: "2.0",
+        id: 1,
+        method: "ping",
+      })
+    })
   }
 }
