@@ -10,8 +10,7 @@ export class Session {
   private transport: SSEClientTransport
   private readonly _connection$ = new BehaviorSubject(Connection.Disconnected)
   public readonly connection$ = this._connection$.asObservable()
-  private connectedAt = 0
-  private timer: number | NodeJS.Timeout
+  private _connectedAt = 0
 
   constructor() {
     this.connect = this.connect.bind(this)
@@ -36,7 +35,7 @@ export class Session {
     this.transport = new SSEClientTransport(u, {})
     this.server = await createMCPServer()
     await this.server.connect(this.transport)
-    this.connectedAt = Date.now()
+    this._connectedAt = Date.now()
     this.applyTimeoutPolicy()
     this._connection$.next(Connection.Connected)
 
@@ -44,8 +43,8 @@ export class Session {
   }
 
   async disconnect() {
+    this._connectedAt = 0
     this._connection$.next(Connection.Disconnected)
-    clearInterval(this.timer)
 
     if (this.server) {
       await this.server.close()
@@ -70,6 +69,10 @@ export class Session {
       connection,
       serverUrl,
     }
+  }
+
+  get connectedAt() {
+    return this._connectedAt
   }
 
   private applyTimeoutPolicy() {

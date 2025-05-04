@@ -1,8 +1,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js"
-import { Subject } from "rxjs"
-import { registerBrowserTools, registerPageTools } from "./tools"
 import { JSONRPCMessage } from "@modelcontextprotocol/sdk/types.js"
+import { registerBrowserTools, registerPageTools, insiderTools } from "./tools"
+import { Subject } from "rxjs"
+import { version } from "@/manifest"
 
 export class ObservableMcpServer extends McpServer {
   private readonly _receivedMessage$ = new Subject<JSONRPCMessage>()
@@ -59,6 +60,10 @@ export async function createMCPServer() {
 
   registerBrowserTools(server)
   registerPageTools(server)
+
+  if (version == "0.0.0") {
+    insiderTools(server)
+  }
 
   return server
 }

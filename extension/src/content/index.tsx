@@ -1,3 +1,5 @@
+import "./patchs/index"
+
 import { createContentRoot } from "@/utils/ext"
 import { waitDomState } from "@ziziyi/dom"
 import { createRoot } from "react-dom/client"

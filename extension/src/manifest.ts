@@ -1,4 +1,5 @@
 import { version } from "../package.json"
+export { version } from "../package.json"
 
 const __DEV__ = process.env.NODE_ENV == "development"
 const __FIREFOX__ = process.env.BROWSER == "firefox"
@@ -93,7 +94,7 @@ export default /* @__PURE__ */ (() => ({
     "contextMenus",
     "search",
     "notifications",
-    "tabCapture",
+    // "tabCapture",
     "downloads",
     // "debugger",
     ...(__DEV__ ? ([] as const) : []),
@@ -103,7 +104,7 @@ export default /* @__PURE__ */ (() => ({
   // minimum_chrome_version: "111",
   web_accessible_resources: [
     {
-      resources: ["logo.svg"],
+      resources: [],
       matches: ["<all_urls>"],
       use_dynamic_url: false,
       // use_dynamic_url: true,

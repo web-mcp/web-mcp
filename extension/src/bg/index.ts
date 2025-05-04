@@ -1,7 +1,9 @@
-import { ContextMenuId, InvokerFunc } from "@/types"
+import { Connection, ContextMenuId, InvokerFunc } from "@/types"
 import { session } from "./session"
 import { msgInvoker } from "@/utils/invoker"
 import { contentMainScript, contentScript } from "@/manifest"
+import { EMPTY, finalize, interval, switchMap, tap } from "rxjs"
+import { formatDuration } from "@/utils/util"
 
 const __DEV__ = process.env.NODE_ENV == "development"
 
@@ -10,6 +12,7 @@ chrome.runtime.onMessage.addListener(handleMessage)
 chrome.runtime.onInstalled.addListener(handleInstalled)
 chrome.contextMenus.onClicked.addListener(handleContextMenusClicked)
 chrome.action.onClicked.addListener(handleActionClicked)
+chrome.action.setBadgeText({ text: "" })
 
 msgInvoker
   .add(InvokerFunc.Connect, session.connect)
@@ -22,12 +25,35 @@ msgInvoker
     })
   })
 
-session.connection$.subscribe(() => {
-  msgInvoker.invoke({
-    func: InvokerFunc.ConnectionState,
-    args: [session.getState()],
-  })
-})
+session.connection$
+  .pipe(
+    tap(() => {
+      msgInvoker.invoke({
+        func: InvokerFunc.ConnectionState,
+        args: [session.getState()],
+      })
+    }),
+    switchMap((connection) => {
+      if (connection == Connection.Connected) {
+        return interval(1000).pipe(
+          tap(() => {
+            const duration = Date.now() - session.connectedAt
+            chrome.action.setBadgeText({
+              text: formatDuration(duration),
+            })
+          }),
+          finalize(() => {
+            chrome.action.setBadgeText({
+              text: "",
+            })
+          })
+        )
+      } else {
+        return EMPTY
+      }
+    })
+  )
+  .subscribe()
 
 function handleMessage(message: any, sender: chrome.runtime.MessageSender) {
   console.log("[bg]: ", message.type, message)

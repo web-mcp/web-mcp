@@ -23,12 +23,13 @@ export async function snapshot(node: Element) {
     const inaccessible = isInaccessible(current)
     const subtreeInaccessible = isSubtreeInaccessible(current)
     const disabled = isDisabled(current)
+    const isEditable = (current as HTMLElement).contentEditable == "true"
 
     const a11y = current.__a11y
     const id = a11y?.id || generateId()
     current.__a11y = {
       id: id,
-      role: getRole(current),
+      role: getRole(current) || (isEditable ? "textbox" : undefined),
       name: computeAccessibleName(current),
       // desc: computeAccessibleDescription(current),
       disabled,
@@ -61,7 +62,7 @@ function accessibleHtml(node: Node): string {
     return node.textContent.trim()
   }
 
-  if (node.nodeName == "NOSCRIPT") {
+  if (node.nodeName == "NOSCRIPT" || node.nodeName == "#comment") {
     return ""
   }
 
@@ -88,7 +89,7 @@ function accessibleHtml(node: Node): string {
 
 function attributes(el: Element, innerHtml: string) {
   const { nodeName } = el
-  const { id, name } = el.__a11y || {}
+  const { id, name, role } = el.__a11y || {}
 
   const attrs: Record<string, string> = {
     id: id,
@@ -97,6 +98,14 @@ function attributes(el: Element, innerHtml: string) {
   switch (nodeName) {
     case "A":
       // attrs.href = el.getAttribute("href")
+      break
+    case "DIV":
+      if (role == "textbox") {
+        attrs["role"] = "textbox"
+        attrs["aria-label"] = name
+      } else if (role) {
+        attrs["role"] = role
+      }
       break
   }
 
@@ -123,12 +132,19 @@ function generateId() {
   return `:${id.toString(36)}`
 }
 
-export function querySelector(selector: string) {
-  if (!selector) return null
+export function queryRef(ref: string) {
+  if (!ref) return null
 
-  if (selector.match(/^#.+$/)) {
-    const id = selector.slice(1)
-    return idMap.get(id)
+  const id = ref.startsWith("#") ? ref.slice(1) : ref
+  const el = idMap.get(id)
+  if (el) {
+    return el
   }
-  throw Error("Not supported yet")
+
+  const el2 = document.querySelector(ref)
+  if (el2) {
+    return el2
+  }
+
+  throw Error("Element not found: " + ref)
 }

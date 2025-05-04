@@ -37,57 +37,89 @@ export function registerBrowserTools(server: McpServer) {
     await chrome.tabs.remove(ids)
     return TextResult("Done")
   })
+
+  server.tool("wait", { seconds: z.number() }, async ({ seconds }) => {
+    await new Promise((r) => setTimeout(r, seconds * 1000))
+    return TextResult("Done")
+  })
 }
 
 export function registerPageTools(server: McpServer) {
-  server.tool("page_snapshot", async () => {
+  const elementSchema = {
+    element: z
+      .string()
+      .describe(
+        "Human-readable element description used to obtain permission to interact with the element"
+      ),
+    ref: z.string().describe("Exact target element id from the page snapshot"),
+  }
+
+  server.tool(
+    "page_snapshot",
+    "Capture accessibility snapshot of the current page",
+    async () => {
+      const tab = await tabReady()
+      return msgInvoker.invoke({
+        tabId: tab.id,
+        func: InvokerFunc.CallTools,
+        args: ["page_snapshot", {}],
+      })
+    }
+  )
+  server.tool(
+    "click",
+    "Perform click on a web page",
+    elementSchema,
+    async ({ element, ref }) => {
+      const tab = await tabReady()
+      return msgInvoker.invoke({
+        tabId: tab.id,
+        func: InvokerFunc.CallTools,
+        args: ["click", { element, ref }],
+      })
+    }
+  )
+  server.tool("dbclick", elementSchema, async ({ element, ref }) => {
     const tab = await tabReady()
     return msgInvoker.invoke({
       tabId: tab.id,
       func: InvokerFunc.CallTools,
-      args: ["page_snapshot", {}],
+      args: ["dbclick", { element, ref }],
     })
   })
-  server.tool("click", { selector: z.string() }, async ({ selector }) => {
-    const tab = await tabReady()
-    return msgInvoker.invoke({
-      tabId: tab.id,
-      func: InvokerFunc.CallTools,
-      args: ["click", { selector }],
-    })
-  })
-  server.tool("dbclick", { selector: z.string() }, async ({ selector }) => {
-    const tab = await tabReady()
-    return msgInvoker.invoke({
-      tabId: tab.id,
-      func: InvokerFunc.CallTools,
-      args: ["dbclick", { selector }],
-    })
-  })
+
+  const typeSchema = {
+    ...elementSchema,
+    text: z.string().describe("Text to type into the element"),
+  }
+
   server.tool(
     "type",
-    { selector: z.string(), text: z.string() },
-    async ({ selector, text }) => {
+    "Type text into editable element",
+    typeSchema,
+    async ({ element, ref, text }) => {
       const tab = await tabReady()
       return msgInvoker.invoke({
         tabId: tab.id,
         func: InvokerFunc.CallTools,
-        args: ["type", { selector, text }],
+        args: ["type", { element, ref, text }],
       })
     }
   )
-  server.tool(
-    "press_key",
-    { selector: z.string(), key: z.string() },
-    async ({ selector, key }) => {
-      const tab = await tabReady()
-      return msgInvoker.invoke({
-        tabId: tab.id,
-        func: InvokerFunc.CallTools,
-        args: ["press_key", { selector, key }],
-      })
-    }
-  )
+
+  const keySchema = {
+    ...elementSchema,
+    key: z.string().describe("Key to press"),
+  }
+
+  server.tool("press_key", keySchema, async ({ element, ref, key }) => {
+    const tab = await tabReady()
+    return msgInvoker.invoke({
+      tabId: tab.id,
+      func: InvokerFunc.CallTools,
+      args: ["press_key", { element, ref, key }],
+    })
+  })
 }
 
 async function tabReady() {
@@ -114,13 +146,13 @@ async function tabReady() {
 }
 
 export function insiderTools(server: McpServer) {
-  // server.tool("google_search", { q: z.string() }, async ({ q }) => {
-  //   await chrome.search.query({
-  //     disposition: "NEW_TAB",
-  //     text: q,
-  //   })
-  //   return TextResult("")
-  // })
+  server.tool("google_search", { q: z.string() }, async ({ q }) => {
+    await chrome.search.query({
+      disposition: "NEW_TAB",
+      text: q,
+    })
+    return TextResult("")
+  })
 
   server.tool(
     "send-notification",

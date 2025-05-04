@@ -15,3 +15,9 @@ declare module "syn" {
   const type: (el: Element, text: string) => void
   const key: (el: Element, key: string) => void
 }
+
+declare interface Window {
+  syn?: {
+    config?: Record<string, number | boolean | string>
+  }
+}

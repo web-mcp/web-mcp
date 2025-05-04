@@ -1,5 +1,6 @@
-import { Input as AntInput, Select as AntSelect, Tooltip } from "antd"
+import { ChevronDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
+import { Input as AntInput, Select as AntSelect, Tooltip } from "antd"
 
 type Props = {
   value?: string
@@ -24,10 +25,12 @@ export default function ProxyInput({
   const selectAfter = (
     <AntSelect
       // defaultOpen
-      value=""
+      value={null}
+      labelRender={() => null}
       onChange={handleSelectChange}
       popupMatchSelectWidth={false}
       dropdownStyle={{ maxHeight: "80vh", maxWidth: "80vw" }}
+      suffixIcon={<ChevronDown className="size-5" />}
       options={[
         {
           label: t("localService"),
