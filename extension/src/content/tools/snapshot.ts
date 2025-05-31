@@ -58,12 +58,12 @@ export async function snapshot(node: Element) {
 }
 
 function accessibleHtml(node: Node): string {
-  if (node.nodeType != node.ELEMENT_NODE) {
-    return node.textContent.trim()
-  }
-
   if (node.nodeName == "NOSCRIPT" || node.nodeName == "#comment") {
     return ""
+  }
+
+  if (node.nodeType != node.ELEMENT_NODE) {
+    return node.textContent.trim()
   }
 
   const el = node as Element

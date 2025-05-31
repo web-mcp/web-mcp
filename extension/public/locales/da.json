@@ -14,5 +14,7 @@
     "step2": "Klik på \"Kør MCP-server\" for at starte, og vent på, at MCP-tjenesten er fuldført.",
     "step3": "Kopiér SSE-tjenesteadressen til brug i SSE MCP-aktiverede agenter.",
     "proposal": "Vi anbefaler at bruge en lokal eller gratis, selvhostet proxytjeneste for en mere stabil og privat forbindelse."
-  }
+  },
+  "viewDocs": "Se dokumenter",
+  "onlineInspector": "Online MCP-inspektør"
 }

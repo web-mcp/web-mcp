@@ -8,6 +8,7 @@ import { sessionSubject } from "@/utils/subjects"
 import { IconAnythingCopilot, IconGithub } from "@/components/svg"
 import Panel from "@/components/connection/Panel"
 import Indicator from "@/components/connection/Indicator"
+import { ArrowUpRight } from "lucide-react"
 
 export default function Popup() {
   const [state, setState] = useState(sessionSubject.value)
@@ -41,7 +42,23 @@ export default function Popup() {
     <div className="flex flex-col min-w-[300px] min-h-[460px] w-full p-6">
       <Indicator state={state} />
       <Panel state={state} />
-      <div className="pt-4">
+      <div className="space-x-3">
+        <a
+          className="inline-flex items-center gap-1 text-xs underline hover:text-orange-500"
+          href="https://web-mcp.ziziyi.com/docs"
+        >
+          <span>{t("viewDocs")}</span>
+          <ArrowUpRight className="size-3" />
+        </a>
+        <a
+          className="inline-flex items-center gap-1 text-xs underline hover:text-orange-500"
+          href="https://web-mcp.ziziyi.com/inspector"
+        >
+          <span>{t("onlineInspector")}</span>
+          <ArrowUpRight className="size-3" />
+        </a>
+      </div>
+      <div className="pt-2 text-xs">
         <ol className="list-decimal ms-4 space-y-2">
           <li>{t("tips.step1")}</li>
           <li>{t("tips.step2")}</li>

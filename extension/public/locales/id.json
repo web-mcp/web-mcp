@@ -14,5 +14,7 @@
     "step2": "Klik \"Jalankan Server MCP\" untuk memulai dan tunggu hingga layanan MCP selesai.",
     "step3": "Salin alamat layanan SSE untuk digunakan di Agen yang mendukung SSE MCP.",
     "proposal": "Kami merekomendasikan penggunaan layanan proksi lokal atau gratis yang di-host sendiri untuk koneksi yang lebih stabil dan pribadi."
-  }
+  },
+  "viewDocs": "Lihat Dokumen",
+  "onlineInspector": "Inspektur MCP Online"
 }

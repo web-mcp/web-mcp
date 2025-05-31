@@ -14,5 +14,7 @@
     "step2": "Kattintson az „MCP-szerver futtatása” gombra az indításhoz, és várja meg, amíg az MCP szolgáltatás befejeződik.",
     "step3": "Másolja ki az SSE szolgáltatási címet az SSE MCP-kompatibilis ügynökökben való használathoz.",
     "proposal": "Stabilabb és privátabb kapcsolat érdekében javasoljuk egy helyi vagy ingyenes, saját üzemeltetésű proxy szolgáltatás használatát."
-  }
+  },
+  "viewDocs": "Dokumentumok megtekintése",
+  "onlineInspector": "Online MCP ellenőr"
 }

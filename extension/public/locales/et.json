@@ -14,5 +14,7 @@
     "step2": "Käivitamiseks klõpsake nuppu „Käivita MCP server” ja oodake, kuni MCP teenus lõpetab.",
     "step3": "Kopeerige SSE teenuse aadress kasutamiseks SSE MCP toega agentides.",
     "proposal": "Stabiilsema ja privaatsema ühenduse tagamiseks soovitame kasutada kohalikku või tasuta isemajutatud puhverserveri teenust."
-  }
+  },
+  "viewDocs": "Vaata dokumente",
+  "onlineInspector": "Online MCP inspektor"
 }

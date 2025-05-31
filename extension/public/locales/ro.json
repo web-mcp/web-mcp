@@ -14,5 +14,7 @@
     "step2": "Faceți clic pe \"Rulați Serverul MCP\" pentru a porni și așteptați finalizarea serviciului MCP.",
     "step3": "Copiați adresa serviciului SSE pentru utilizare în agenții compatibili SSE MCP.",
     "proposal": "Vă recomandăm să utilizați un serviciu proxy local sau gratuit, auto-găzduit, pentru o conexiune mai stabilă și privată."
-  }
+  },
+  "viewDocs": "Vizualizați documentele",
+  "onlineInspector": "Inspector MCP online"
 }

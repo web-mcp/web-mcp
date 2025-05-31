@@ -14,5 +14,7 @@
     "step2": "Klicken Sie auf „MCP-Server ausführen“, um zu starten, und warten Sie, bis der MCP-Dienst abgeschlossen ist.",
     "step3": "Kopieren Sie die Adresse des SSE-Dienstes zur Verwendung in SSE MCP-fähigen Agents.",
     "proposal": "Für eine stabilere und privatere Verbindung empfehlen wir die Verwendung eines lokalen oder kostenlosen, selbst gehosteten Proxy-Dienstes."
-  }
+  },
+  "viewDocs": "Dokumente anzeigen",
+  "onlineInspector": "Online-MCP-Inspektor"
 }

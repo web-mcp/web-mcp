@@ -14,5 +14,7 @@
     "step2": "点击\"启动 MCP 服务\"，启动并等待 MCP 服务完成。",
     "step3": "复制 SSE 服务地址，用于支持 SSE MCP 的 Agent。",
     "proposal": "我们建议使用本地或免费的自托管代理服务，以获得更稳定和私密的连接。"
-  }
+  },
+  "viewDocs": "查看文档",
+  "onlineInspector": "在线 MCP 检查器"
 }

@@ -14,5 +14,7 @@
     "step2": "Başlatmak için \"MCP Sunucusunu Çalıştır\"a tıklayın ve MCP hizmetinin tamamlanmasını bekleyin.",
     "step3": "SSE MCP özellikli Aracılarda kullanmak üzere SSE hizmet adresini kopyalayın.",
     "proposal": "Daha kararlı ve özel bir bağlantı için yerel veya ücretsiz, kendi kendine barındırılan bir proxy hizmeti kullanmanızı öneririz."
-  }
+  },
+  "viewDocs": "Belgeleri Görüntüle",
+  "onlineInspector": "Çevrimiçi MCP Denetçisi"
 }

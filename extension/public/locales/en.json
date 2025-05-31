@@ -14,5 +14,7 @@
     "step2": "Click \"Run MCP Server\" to start and wait for the MCP service to complete.",
     "step3": "Copy the SSE service address for use in SSE MCP-enabled Agents.",
     "proposal": "We recommend using a local or free, self-hosted proxy service for a more stable and private connection."
-  }
+  },
+  "viewDocs": "View Docs",
+  "onlineInspector": "Online MCP Inspector"
 }

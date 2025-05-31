@@ -14,5 +14,7 @@
     "step2": "Spustelėkite „Paleisti MCP serverį“, kad paleistumėte, ir palaukite, kol MCP tarnyba bus baigta.",
     "step3": "Nukopijuokite SSE tarnybos adresą, kad galėtumėte naudoti SSE MCP palaikančiuose agentuose.",
     "proposal": "Rekomenduojame naudoti vietinę arba nemokamą, savarankiškai prieglobos tarpinio serverio tarnybą, kad ryšys būtų stabilesnis ir privatus."
-  }
+  },
+  "viewDocs": "Žiūrėti dokumentus",
+  "onlineInspector": "Internetinis MCP inspektorius"
 }

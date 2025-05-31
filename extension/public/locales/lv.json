@@ -14,5 +14,7 @@
     "step2": "Noklikšķiniet uz Palaist MCP serveri, lai sāktu, un pagaidiet, līdz MCP pakalpojums tiks pabeigts.",
     "step3": "Nokopējiet SSE pakalpojuma adresi lietošanai SSE MCP iespējotos aģentos.",
     "proposal": "Stabilākam un privātākam savienojumam iesakām izmantot lokālu vai bezmaksas, pašmitinātu starpniekservera pakalpojumu."
-  }
+  },
+  "viewDocs": "Skatīt dokumentus",
+  "onlineInspector": "Tiešsaistes MCP inspektors"
 }

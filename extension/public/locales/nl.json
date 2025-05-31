@@ -14,5 +14,7 @@
     "step2": "Klik op \"MCP Server uitvoeren\" om te starten en wacht tot de MCP-service is voltooid.",
     "step3": "Kopieer het SSE-serviceadres voor gebruik in SSE MCP-compatibele agents.",
     "proposal": "We raden aan een lokale of gratis, zelf gehoste proxyservice te gebruiken voor een stabielere en private verbinding."
-  }
+  },
+  "viewDocs": "Documenten bekijken",
+  "onlineInspector": "Online MCP-inspecteur"
 }

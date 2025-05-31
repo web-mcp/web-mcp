@@ -10,3 +10,7 @@ export function formatDuration(d: number) {
   if (h > 0) result = `${h}:${result}`
   return result
 }
+
+export function randomUUID() {
+  return crypto.randomUUID()
+}

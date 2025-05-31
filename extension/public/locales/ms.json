@@ -14,5 +14,7 @@
     "step2": "Klik \"Jalankan Pelayan MCP\" untuk memulakan dan tunggu sehingga perkhidmatan MCP selesai.",
     "step3": "Salin alamat perkhidmatan SSE untuk digunakan dalam Ejen yang didayakan SSE MCP.",
     "proposal": "Kami mengesyorkan menggunakan perkhidmatan proksi tempatan atau percuma yang dihoskan sendiri untuk sambungan yang lebih stabil dan peribadi."
-  }
+  },
+  "viewDocs": "Lihat Dokumen",
+  "onlineInspector": "Inspektor MCP Dalam Talian"
 }

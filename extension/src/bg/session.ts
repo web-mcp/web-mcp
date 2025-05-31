@@ -2,12 +2,14 @@ import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js"
 import { createMCPServer, ObservableMcpServer } from "./mcp"
 import { BehaviorSubject, Subject } from "rxjs"
 import { Connection, type SessionState } from "@/types"
+import { WsClientTransport } from "./WsClientTransport"
+import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js"
 
 export class Session {
   private url: URL
   private token: string
   private server: ObservableMcpServer
-  private transport: SSEClientTransport
+  private transport: Transport
   private readonly _connection$ = new BehaviorSubject(Connection.Disconnected)
   public readonly connection$ = this._connection$.asObservable()
   private _connectedAt = 0
@@ -32,7 +34,13 @@ export class Session {
     this.token = token
     this.url = u
     this._connection$.next(Connection.Connecting)
-    this.transport = new SSEClientTransport(u, {})
+
+    if (u.protocol.match(/wss?:/)) {
+      this.transport = new WsClientTransport(u)
+    } else {
+      this.transport = new SSEClientTransport(u, {})
+    }
+
     this.server = await createMCPServer()
     await this.server.connect(this.transport)
     this._connectedAt = Date.now()

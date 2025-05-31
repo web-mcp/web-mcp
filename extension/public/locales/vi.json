@@ -14,5 +14,7 @@
     "step2": "Nhấp vào \"Chạy Máy chủ MCP\" để bắt đầu và đợi dịch vụ MCP hoàn tất.",
     "step3": "Sao chép địa chỉ dịch vụ SSE để sử dụng trong các Tác nhân hỗ trợ SSE MCP.",
     "proposal": "Chúng tôi khuyên bạn nên sử dụng dịch vụ proxy tự lưu trữ, cục bộ hoặc miễn phí để có kết nối ổn định và riêng tư hơn."
-  }
+  },
+  "viewDocs": "Xem tài liệu",
+  "onlineInspector": "Thanh tra MCP trực tuyến"
 }

@@ -14,5 +14,7 @@
     "step2": "Kliknutím na tlačidlo „Spustiť MCP server“ spustíte a počkáte na dokončenie služby MCP.",
     "step3": "Skopírujte adresu služby SSE na použitie v agentoch s podporou SSE MCP.",
     "proposal": "Pre stabilnejšie a súkromnejšie pripojenie odporúčame použiť lokálnu alebo bezplatnú službu proxy servera hosťovanú samostatne."
-  }
+  },
+  "viewDocs": "Zobraziť dokumenty",
+  "onlineInspector": "Online MCP inšpektor"
 }

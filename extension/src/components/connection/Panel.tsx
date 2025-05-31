@@ -8,6 +8,7 @@ import { Copy, LoaderCircle, Play, Power } from "lucide-react"
 import { getLocal, setLocal } from "@/utils/ext"
 import { useTranslation } from "react-i18next"
 import ProxyInput from "./ProxyInput"
+import { randomUUID } from "@/utils/util"
 
 type Props = {
   state: SessionState
@@ -39,7 +40,7 @@ export default function Connect({ state }: Props) {
   const handleConnect = async () => {
     let token = tokenData.url == proxyUrl ? tokenData.token : ""
     if (!token) {
-      token = crypto.randomUUID()
+      token = randomUUID()
     }
 
     const state = await msgInvoker.invoke({

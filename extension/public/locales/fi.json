@@ -14,5 +14,7 @@
     "step2": "Käynnistä napsauttamalla \"Suorita MCP-palvelin\" ja odota, kunnes MCP-palvelu on valmis.",
     "step3": "Kopioi SSE-palveluosoite käytettäväksi SSE MCP -yhteensopivissa agenteissa.",
     "proposal": "Suosittelemme paikallisen tai ilmaisen, itse isännöidyn välityspalvelimen käyttöä vakaamman ja yksityisemmän yhteyden saamiseksi."
-  }
+  },
+  "viewDocs": "Näytä dokumentit",
+  "onlineInspector": "Online-MCP-tarkastaja"
 }

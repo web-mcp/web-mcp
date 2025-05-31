@@ -14,5 +14,7 @@
     "step2": "Kliknite »Zaženi strežnik MCP«, da zaženete, in počakajte, da se storitev MCP zaključi.",
     "step3": "Kopirajte naslov storitve SSE za uporabo v agentih, ki podpirajo SSE MCP.",
     "proposal": "Za stabilnejšo in zasebno povezavo priporočamo uporabo lokalne ali brezplačne proxy storitve, ki jo gostite sami."
-  }
+  },
+  "viewDocs": "Ogled dokumentov",
+  "onlineInspector": "Spletni MCP inšpektor"
 }

@@ -14,5 +14,7 @@
     "step2": "Kliknite na „Pokreni MCP poslužitelj” za pokretanje i pričekajte da se MCP usluga dovrši.",
     "step3": "Kopirajte adresu SSE usluge za upotrebu u agentima omogućenim za SSE MCP.",
     "proposal": "Preporučujemo upotrebu lokalne ili besplatne, samostalno hostirane proxy usluge za stabilniju i privatniju vezu."
-  }
+  },
+  "viewDocs": "Pregledaj dokumente",
+  "onlineInspector": "Online MCP inspektor"
 }
